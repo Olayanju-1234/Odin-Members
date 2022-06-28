@@ -2,12 +2,14 @@
   "name": "members",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "start": "nodemon ./bin/www"
-  },
+
   "engines": {
     "node": "16.14.0"
   },
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  
   "dependencies": {
     "async": "^3.2.4",
     "bcryptjs": "^2.4.3",
