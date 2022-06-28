@@ -13,7 +13,7 @@ const session = require('express-session');
 
 const mongoose = require('mongoose');
 
-const mongoDB = "mongodb+srv://clubhouse:clubhouse@cluster0.t1nnj.mongodb.net/?retryWrites=true&w=majority"
+const mongoDB = process.env.MONGODB_URI;
 
 // Connect to MongoDB
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
